@@ -1,0 +1,28 @@
+﻿<Window x:Class="HeadhunterWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadhunterWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="692,10,0,0" VerticalAlignment="Top" Height="24" Width="98" Click="SearchButton_Click"/>
+        <TextBox Name="SearchTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="677" Height="24"/>
+        <DataGrid Name="ResultGrid" Margin="0,52,0,0" MouseDoubleClick="ResultGrid_MouseDoubleClick">
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Id" Binding="{Binding Id, Mode=OneWay}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=OneWay}" />
+                <DataGridTextColumn Header="Url" Binding="{Binding Url, Mode=OneWay}" />
+                <DataGridTextColumn Header="AlternateUrl" Binding="{Binding AlternateUrl, Mode=OneWay}" />
+                <DataGridTextColumn Header="LogoUrls" Binding="{Binding LogoUrls, Mode=OneWay}" />
+                <DataGridTextColumn Header="VacanciesUrl" Binding="{Binding VacanciesUrl, Mode=OneWay}" />
+                <DataGridTextColumn Header="OpenVacancies" Binding="{Binding OpenVacancies, Mode=OneWay}" />
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
