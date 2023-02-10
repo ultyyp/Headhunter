@@ -70,7 +70,7 @@ namespace HeadhunterWPF
 
         private void ResultGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            var item = (HeadhunterClientAPI.HeadhunterMethods.Item)ResultGrid.SelectedItem;
+            var item = (HeadhunterMethods.Item)ResultGrid.SelectedItem;
             OpenUrl(item.AlternateUrl.ToString());
         }
     }
