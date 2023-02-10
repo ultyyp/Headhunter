@@ -30,7 +30,7 @@ namespace HeadhunterWPF
 
         private async void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            HeadhunterMethods.ResponseEmployers re = await HeadhunterMethods.GetEmployersByStr(SearchTextBox.Text);
+            HeadhunterMethods.ResponseEmployers re = await HeadhunterMethods.GetEmployersByStrAsync(SearchTextBox.Text);
 
             foreach(var item in re.Items)
             {
