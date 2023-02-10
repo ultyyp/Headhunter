@@ -105,7 +105,7 @@ namespace HeadhunterClientAPI
         }
 
 
-        public async static Task<ResponseEmployers> GetEmployersByStr(string str)
+        public async static Task<ResponseEmployers> GetEmployersByStrAsync(string str)
         {
             if(str== null) throw new ArgumentNullException("str is null!");
             if (str.Length == 0) throw new ArgumentException("Empty Argument!");
