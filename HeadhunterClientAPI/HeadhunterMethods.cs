@@ -121,7 +121,7 @@ namespace HeadhunterClientAPI
                     }
                 }
             };
-            using var response = await httpsClient.GetAsync(url);
+            using var response = await httpsClient.GetAsync(url).ConfigureAwait(false);
 
             if(response.IsSuccessStatusCode)
             {
